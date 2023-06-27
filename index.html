@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        div {
+            font-size: 20px;
+            
+
+            padding: 4px 0;
+        }
+
+        hr {
+            border: 0;
+            margin: 20px 0;
+
+            height: 8px;
+
+            background-color:rgb(220, 226, 233);
+        }
+
+        hr.thin {
+            height: 4px;
+        }
+
+        tr{
+            height:32px;
+            
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color:rgb(220, 226, 233);
+        }
+
+        span.statistic-result{
+            text-decoration:underline;
+        }
+
+    </style>
+    <title>Typescript Dados</title>
+</head>
+
+<body>
+    <hr />
+
+    <h2>Estatísticas</h2>
+    <div>Total:   <span id="total" class="statistic-result">R$30.506,30</span></div>
+
+    <hr class="thin" />
+
+    <div>Cartão de crédito: <span id="credit-card-purchases" class="statistic-result">70</span> </div>
+    <div>Boleto: <span id="ticket-purchases" class="statistic-result">30</span></div>
+
+    <hr class="thin" />
+
+    <div>Paga: <span id="payments-made" class="statistic-result">70</span></div>
+    <div>Recusada pela operadora de cartão: <span id="declined" class="statistic-result">14</span> </div>
+    <div>Aguardando pagamento: <span id="waiting-payment" class="statistic-result">10</span></div>
+    <div>Estornada: <span id="reversed" class="statistic-result">2</span></div>
+    <div>Dia com mais vendas: <span id="most-sell-day" class="statistic-result">terca</span> </div>
+
+    <hr />
+
+    <h2>Dados</h2>
+
+    <table style="width: 100%; border-spacing: 0;">
+        <thead>
+            <tr style="text-align: left;">
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Compra</th>
+                <th>Pagamento</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gustavo</td>
+                <td>gus@mail.com</td>
+                <td>R$ 450,00</td>
+                <td>Boleto</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>gus@mail.com</td>
+                <td>R$ 450,00</td>
+                <td>Boleto</td>
+                <td>Status</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>gus@mail.com</td>
+                <td>R$ 450,00</td>
+                <td>Boleto</td>
+                <td>Status</td>
+            </tr>   
+        </tbody>
+    </table>
+
+</body>
+
+</html>
